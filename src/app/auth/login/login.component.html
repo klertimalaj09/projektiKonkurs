@@ -1,0 +1,16 @@
+<div class="form-container" [formGroup]="loginForm">
+  <div class="input-container">
+    <input placeholder="email" type="email" formControlName="email">
+
+  </div>
+  <div class="input-container">
+    <input placeholder="password" type="password" formControlName="password">
+
+  </div>
+
+  <button (click)="login()">LOGIN</button>
+
+  @if (error) {
+    <p class="error">{{error}}</p>
+  }
+</div>
